@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+    <action>
+        <actionName>CUSTOM-ggitflow:feature-start</actionName>
+        <displayName>ggitflow:feature-start</displayName>
+        <goals>
+            <goal>ggitflow:feature-start</goal>
+            
+        </goals>
+    </action>
+    <action>
+        <actionName>CUSTOM-ggitflow:feature-finish</actionName>
+        <displayName>ggitflow:feature-finish</displayName>
+        <goals>
+            <goal>ggitflow:feature-finish</goal>
+            
+        </goals>        
+    </action>    
+    <action>
+        <actionName>CUSTOM-ggitflow:release-start</actionName>
+        <displayName>ggitflow:release-start</displayName>
+        <goals>
+            <goal>ggitflow:release-start</goal>
+            <goal>-X</goal>
+            <goal>-U</goal>
+            
+        </goals>
+        <properties>
+                <jpda.listen>maven</jpda.listen>
+                <releaseName>1.2.1</releaseName>
+            </properties>
+    </action>
+    <action>
+        <actionName>CUSTOM-ggitflow:release-finish</actionName>
+        <displayName>ggitflow:release-finish</displayName>
+        <goals>
+            <goal>ggitflow:release-finish</goal>
+            
+        </goals>
+        <properties>
+                <jpda.listen>maven</jpda.listen>
+            </properties>
+    </action>
+    <action>
+        <actionName>CUSTOM-ggitflow:hotfix-start</actionName>
+        <displayName>ggitflow:hotfix-start</displayName>
+        <goals>
+            <goal>ggitflow:hotfix-start</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>CUSTOM-ggitflow:hotfix-finish</actionName>
+        <displayName>ggitflow:hotfix-finish</displayName>
+        <goals>
+            <goal>ggitflow:hotfix-finish</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>CUSTOM-ggitflow:support-start</actionName>
+        <displayName>ggitflow:support-start</displayName>
+        <goals>
+            <goal>ggitflow:support-start</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>CUSTOM-versions:set</actionName>
+        <displayName>versions:set</displayName>
+        <goals>
+            <goal>versions:set</goal>
+        </goals>
+        <properties>
+            <generateBackupPoms>false</generateBackupPoms>
+            <newVersion>1.0-SNAPSHOT</newVersion>
+        </properties>
+    </action>
+    <action>
+        <actionName>CUSTOM-ggitflow:feature-finish rebase</actionName>
+        <displayName>ggitflow:feature-finish rebase</displayName>
+        <goals>
+            <goal>ggitflow:feature-finish</goal>
+            
+        </goals>
+        <properties>
+            <isRebase>true</isRebase>
+            <isInteractive>true</isInteractive>
+        </properties>
+    </action>
+    <action>
+        <actionName>CUSTOM-ggitflow:feature-finish squash</actionName>
+        <displayName>ggitflow:feature-finish squash</displayName>
+        <goals>
+            <goal>ggitflow:feature-finish</goal>
+            
+        </goals>
+        <properties>
+            <squash>true</squash>
+        </properties>
+    </action>
+    <action>
+        <actionName>CUSTOM-ggitflow:feature-finish keep</actionName>
+        <displayName>ggitflow:feature-finish keep</displayName>
+        <goals>
+            <goal>ggitflow:feature-finish</goal>
+            
+        </goals>
+        <properties>
+            <keep>true</keep>
+        </properties>
+    </action>
+    <action>
+            <actionName>CUSTOM-ggitflow:debug-start</actionName>
+            <displayName>ggitflow:debug-start</displayName>
+            <goals>
+                <goal>ggitflow:debug-start</goal>
+            </goals>
+        </action>
+    <action>
+            <actionName>CUSTOM-nexus start</actionName>
+            <displayName>nexus start</displayName>
+            <goals>
+                <goal>exec:exec</goal>
+            </goals>
+        </action>
+    <action>
+            <actionName>CUSTOM-site:deploy</actionName>
+            <displayName>site:deploy</displayName>
+            <goals>
+                <goal>site:deploy</goal>
+            </goals>
+        </action>
+    <action>
+            <actionName>CUSTOM-versions:use-next-versions</actionName>
+            <displayName>versions:use-next-versions</displayName>
+            <goals>
+                <goal>versions:use-next-versions</goal>
+            </goals>
+            <properties>
+                <includes>com.dessie.3pp.dep,com.dkirrane.maven.plugins</includes>
+                
+                <jpda.listen>maven</jpda.listen>
+            </properties>
+        </action>
+</actions>

@@ -1,0 +1,11 @@
+/parent/child-one/target/
+/parent/target/
+/my-app/child-one/target/
+/my-app/target/
+/my-app/my-app-module1/target/
+/my-app/my-app-module2/target/
+/gf-verify/gf-verify-module2/target/
+/gf-verify/gf-verify-module1/target/
+*.orig
+/some-3pp-dep/target/
+*.versionsBackup
